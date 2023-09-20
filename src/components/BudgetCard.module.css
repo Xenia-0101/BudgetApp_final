@@ -1,0 +1,59 @@
+
+.budgetCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+    
+    width: 100%;
+    max-width: 400px;
+
+    height: max-content;
+
+    font-size: 1.5rem;
+
+    background-color: var(--background-card);
+    border: 1px solid var(--text-primary);
+    border-radius: 5px;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.cardHeader > :first-child {
+    margin-right: auto;
+    text-transform: capitalize;
+    font-family: var(--font-subheading);
+}
+
+.cardMax {
+    margin-left: .25rem;
+    font-size: 1.15rem;
+}
+
+.progressBarBorder {
+    height: 1rem;
+    width: 100%;
+    border: 1px solid var(--text-primary);
+    border-radius: 25px;
+    background-color: #ffffff90;
+    margin: 2rem 0;
+
+    overflow: hidden;
+}
+
+.progressBarFill {
+    border-radius: 25px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    height: 100%;
+}
+
+.cardFooter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem
+}

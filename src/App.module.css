@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0.5rem 2rem;
+
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--text-primary);
+}
+
+.header > :first-child {
+  margin-right: auto;
+  font-family: var(--font-heading);
+}
+
+
+.body {
+  display: grid;
+  justify-items: center;
+  align-content: flex-start;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1rem;
+}

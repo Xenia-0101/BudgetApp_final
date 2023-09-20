@@ -1,0 +1,89 @@
+:root {
+  --background: #fff4ea60;
+  --background-light: #fff4ea30;
+
+  --background-card: #fff4ea;
+
+  --text-primary: black;
+  --text-primary-light: #00000095;
+  --text-primary-shaded: #00000080;
+
+  --green: #a2c579;
+  --orange: #ffbb5c;
+  --red: #e25e3e;
+  --red-50: #e25e3e50;
+
+  --button: #088395;
+  --button-light: #08839580;
+  --button-50: #08839550;
+  --button-15: #08839515;
+  --button-08: #08839508;
+
+  --font-heading: 'permanent marker', cursive;
+  --font-subheading: 'Josefin Sans', Calibri, 'Trebuchet MS', sans-serif ;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-light);
+}
+
+button {
+  background: none;
+  border: 1px solid var(--button);
+  border-radius: 5px;
+
+  padding: 0.3rem 0.5rem;
+
+  font-size: 1rem;
+  color: var(--button);
+}
+
+button:hover:not(:disabled),
+button:focus:not(:disabled) {
+  cursor: pointer;
+  background-color: var(--button);
+  color: var(--background-card);
+}
+
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+button:disabled {
+  color: var(--text-primary-shaded);
+  border-color: var(--text-primary-shaded);
+}
+
+button.closeBtn{
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+button.caretBtn {
+  border: none;
+}
+
+button.closeBtn:hover,
+button.caretBtn:hover,
+button.closeBtn:focus,
+button.caretBtn:focus {
+  cursor: pointer;
+  color: var(--text-primary);
+  background-color: transparent;
+}
+
+button.closeBtn:active,
+button.caretBtn:active {
+  transform: translateY(1px);
+  background-color: transparent;
+}
